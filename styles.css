@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-image: url('./cosmic-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+.cosmic-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #f0f;
+}
+
+.bg-dark-transparent {
+    background-color: rgba(10, 0, 20, 0.7);
+    border: 1px solid rgba(171, 71, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.roulette-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roulette-wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #ab47ff;
+    box-shadow: 0 0 20px #ab47ff, inset 0 0 15px rgba(171, 71, 255, 0.6);
+    position: relative;
+    transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    background-color: rgba(20, 0, 40, 0.8);
+}
+
+.roulette-pointer {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #ffeb3b;
+    z-index: 10;
+    filter: drop-shadow(0 0 5px #ffeb3b);
+}
+
+.segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 25%;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+}
+
+.segment .symbol {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); /* Adjust for initial segment rotation */
+    object-fit: contain;
+}
+
+.cosmic-button {
+    background: linear-gradient(45deg, #ab47ff, #5e35b1);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #ab47ff;
+}
+
+.cosmic-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ab47ff;
+}
+
+.cosmic-button:disabled {
+    background: #555;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+#result-symbol {
+    filter: drop-shadow(0 0 15px #fff);
+}
+
+.recharge-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(171, 71, 255, 0.5);
+    cursor: pointer;
+}
+
+.recharge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(171, 71, 255, 0.7);
+    border-color: rgba(171, 71, 255, 0.9);
+}
+
+/* ...existing styles... */
+
+            <div>
+                <h5>Nivel</h5>
+                <p id="level-display" class="fs-4">1</p>
+            </div>
+            <div>
+                <h5>Siguiente Nivel</h5>
+                <p id="next-level-display" class="fs-4">100 Tokens</p>
+            </div>
+            <div>
+                <h5>Puntaje Máximo</h5>
+/* ...existing styles... */
